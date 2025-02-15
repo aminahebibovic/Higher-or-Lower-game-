@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Lower Game in Country Size</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Higher Lower Game in Country Size</h1>
+    </header>
+
+    <div class="scoreboard">
+        <div class="score" id="current-score">
+            <p>Score</p>
+            <h2 id="score">0</h2>
+        </div>
+        <div class="score" id="best-score">
+            <p>Highscore</p>
+            <h2 id="highscore">0</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="country-section">
+            <img class="flag-rectangle" id="left-flag" >
+            <h2 class="country-name" id="left-name"></h2>
+            <p class="is-text">is</p>
+            <h1 id="left-area"></h1>
+            <p class="total-text">in size</p>
+        </div>
+
+        <div class="separator"></div>
+
+
+        <div class="country-section">
+            <img class="flag-rectangle" id="right-flag" >
+            <h2 class="country-name" id="right-name"></h2>
+            <p class="is-text">is</p>
+            <h1 id="right-area"></h1>
+            <button class="guess-button" onclick="checkAnswer('higher')">↑ Higher</button>
+            <button class="guess-button" onclick="checkAnswer('lower')">↓ Lower</button>
+            <p class="total-text">in size</p>
+        </div>
+    </div>
+
+    <div class="game-over" id="game-over">
+        <h1>Game Over</h1>
+        <p>Your Score: <span id="final-score"></span></p>
+        <button onclick="resetGame()">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
