@@ -29,4 +29,4 @@ A simple game where players guess whether one country's size is **higher** or **
 - Implement a leaderboard system.  
 
 ## 📜 License  
-This project is open-source and free to use.  
+This project is licensed under the **MIT License**. See the **LICENSE** file for more details.
